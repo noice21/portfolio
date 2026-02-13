@@ -62,47 +62,20 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     });
 });
 
-// Video thumbnail selector
+// Video thumbnail selector (YouTube embeds)
 const videoThumbs = document.querySelectorAll('.video-thumb');
 const mainVideo = document.getElementById('main-video');
 
-// Auto-generate thumbnails from video frames
-videoThumbs.forEach(thumb => {
-    const videoSrc = thumb.getAttribute('data-video');
-    const preview = thumb.querySelector('.thumb-preview');
-    const thumbVideo = document.createElement('video');
-    thumbVideo.src = videoSrc;
-    thumbVideo.muted = true;
-    thumbVideo.preload = 'metadata';
-    thumbVideo.style.width = '100%';
-    thumbVideo.style.height = '100%';
-    thumbVideo.style.objectFit = 'cover';
-    thumbVideo.style.borderRadius = '4px';
-    thumbVideo.style.pointerEvents = 'none';
-
-    thumbVideo.addEventListener('loadeddata', function() {
-        thumbVideo.currentTime = Math.min(2, thumbVideo.duration / 4);
-        // Hide the play icon once video frame is loaded
-        const playIcon = preview.querySelector('.thumb-play');
-        if (playIcon) playIcon.style.display = 'none';
-    });
-
-    preview.appendChild(thumbVideo);
-});
-
 videoThumbs.forEach(thumb => {
     thumb.addEventListener('click', function() {
-        const videoSrc = this.getAttribute('data-video');
+        const videoId = this.getAttribute('data-video');
 
         // Update active state
         videoThumbs.forEach(t => t.classList.remove('active'));
         this.classList.add('active');
 
-        // Swap and play the video
-        mainVideo.pause();
-        mainVideo.querySelector('source').setAttribute('src', videoSrc);
-        mainVideo.load();
-        mainVideo.play();
+        // Swap the YouTube embed
+        mainVideo.src = 'https://www.youtube.com/embed/' + videoId;
     });
 });
 
