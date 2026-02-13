@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Battle &amp; Target Camera - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Dynamic Battle &amp; Target Camera</h1>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    A dynamic battle camera system built entirely in Blueprints. When combat begins, a dedicated
+                    battle camera spawns and takes over from the player — the player doesn't control it directly,
+                    but that works in the system's favor. The camera views both the player and their currently
+                    targeted enemy from a high vantage point, calculating the midpoint between them to keep
+                    both in frame at all times.
+                </p>
+                <p>
+                    The camera dynamically adjusts its distance based on how far apart the player and enemy are —
+                    zooming out when they're far away and zooming in when they're close together. This keeps the
+                    action readable and cinematic without any manual camera control needed during fights.
+                </p>
+                <p>
+                    It also handles mid-battle character switching and target switching smoothly. When the player
+                    swaps to a different party member, the camera recalculates from the new character's position.
+                    When the player switches their target to a different enemy, the camera smoothly transitions
+                    to the new midpoint between the player and the newly targeted enemy. Planning to convert
+                    to C++ in the future for better performance and extensibility.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">Blueprints</span>
+                    <span class="detail-tag">Camera</span>
+                    <span class="detail-tag">Dynamic Zoom</span>
+                    <span class="detail-tag">Target Tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/camera-system.png">
+                    <source src="videos/dev/camera-system-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Blueprints</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/camera-system/screenshot1.png" alt="Camera System Blueprint 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/camera-system/screenshot2.png" alt="Camera System Blueprint 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/camera-system/screenshot3.png" alt="Camera System Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

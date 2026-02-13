@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest System - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Quest System</h1>
+        <span class="detail-badge wip">In Development</span>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    A complete quest management system built in C++ with procedural generation, quest chains, NPC assignments,
+                    UI widgets, and minimap integration. The system handles both hand-crafted DataTable quests and
+                    procedurally generated content themed to the current story arc and region.
+                </p>
+                <p>
+                    The procedural generation engine creates contextual side quests tied to the active main quest arc,
+                    pulling themed enemies, items, NPCs, and locations from an arc content map. It supports quest chains
+                    with automatic linking, reward scaling by player level with tiered rarity pools, and NPC quest assignment
+                    for distributing generated quests to world actors.
+                </p>
+                <p>
+                    The UI layer includes a Quest Log with main/side separation and gamepad navigation, individual Quest Entry widgets
+                    with progress bars and visual states, and a Notification popup with auto-hide and queue support.
+                    The system optionally integrates with the Minimap System plugin to display quest markers on tracked objectives.
+                    Full save/load support serializes all active, completed, and procedurally generated quest state.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">C++</span>
+                    <span class="detail-tag">Blueprints</span>
+                    <span class="detail-tag">UMG</span>
+                    <span class="detail-tag">Data Tables</span>
+                    <span class="detail-tag">Procedural Generation</span>
+                    <span class="detail-tag">Plugin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/quest-system.png">
+                    <source src="videos/dev/quest-system-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Blueprints</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/quest-system/screenshot1.png" alt="Quest System Blueprint 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/quest-system/screenshot2.png" alt="Quest System Blueprint 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/quest-system/screenshot3.png" alt="Quest System Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

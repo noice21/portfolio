@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dodge System - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Smart Dodge System</h1>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    A smart directional dodge system built entirely in C++ that evaluates the character's surroundings
+                    and picks the best escape route, avoiding obstacles and enemies. Instead of dodging in a fixed direction,
+                    the system samples multiple directions using capsule sweeps, scores each by obstacle clearance (30%)
+                    and enemy avoidance (70%), and slides the character along the highest-scoring path.
+                </p>
+                <p>
+                    The movement uses CharacterMovementComponent velocity override rather than LaunchCharacter to prevent
+                    the character from being "sent flying" when close to enemies. An ease-out curve provides smooth deceleration,
+                    and velocity is zeroed before and after dodge for clean transitions. Directional animation montages
+                    are automatically selected by mapping the dodge direction to forward/back/left/right quadrants
+                    relative to the character's facing.
+                </p>
+                <p>
+                    Configurable settings include dodge distance, duration, cooldown, air dodge toggle, trace radius,
+                    number of sampled directions, enemy detection radius, and minimum clear distance threshold.
+                    The component attaches to any character and exposes a clean Blueprint API with events
+                    for dodge started, completed, and failed states.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">C++</span>
+                    <span class="detail-tag">Capsule Sweeps</span>
+                    <span class="detail-tag">CMC</span>
+                    <span class="detail-tag">Animation Montages</span>
+                    <span class="detail-tag">AI Scoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/dodge-system.png">
+                    <source src="videos/dev/dodge-system-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Code</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/dodge-system/screenshot1.png" alt="Dodge System Code 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/dodge-system/screenshot2.png" alt="Dodge System Code 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/dodge-system/screenshot3.png" alt="Dodge System Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

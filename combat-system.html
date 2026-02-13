@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Combat System - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Party Combat System</h1>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    Built on top of the <a href="https://www.fab.com/listings/fe140454-1e7f-49eb-bd29-cf5588ce3ed1" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Turn-Based jRPG Template</a> from the Fab marketplace.
+                    The template provided a foundation for party-based gameplay with character switching in both
+                    battle and exploration, which I then heavily reworked to fit Project Lucian's action-oriented vision.
+                </p>
+                <p>
+                    <strong>What the template provided:</strong> Turn-based battle flow, party of 3 characters on the field,
+                    and instant button-press character switching in both combat and exploration.
+                </p>
+                <p>
+                    <strong>What I changed:</strong> Converted the entire battle system from turn-based to real-time action combat
+                    where you can switch characters instantly with a button press mid-fight. For exploration, I redesigned
+                    character switching to go through a party member UI screen instead of instant swapping, giving players
+                    a more deliberate party management experience outside of combat. I also built Behavior Tree-driven
+                    enemy AI that reacts dynamically to player tactics instead of following scripted turn patterns,
+                    and added combo mechanics for each party member. I also implemented a Tales-inspired Mystic Arte system —
+                    a gauge that fills during combat, and when full, allows the player, allies, or enemies to unleash
+                    a powerful ultimate arte.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">Blueprints</span>
+                    <span class="detail-tag">Behavior Trees</span>
+                    <span class="detail-tag">AI</span>
+                    <span class="detail-tag">System Rework</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/combat-system.png">
+                    <source src="videos/dev/combat-system-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Blueprints</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/combat-system/screenshot1.png" alt="Combat System Blueprint 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/combat-system/screenshot2.png" alt="Combat System Blueprint 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/combat-system/screenshot3.png" alt="Combat System Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

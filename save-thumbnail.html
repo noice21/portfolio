@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Thumbnail System - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Save Thumbnail System</h1>
+        <span class="detail-badge wip">In Development</span>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    A C++ plugin that captures and retrieves save game thumbnail screenshots. It uses a SceneCaptureComponent2D
+                    to take a snapshot of the current scene, compresses it to PNG asynchronously on a background thread,
+                    and saves it to disk. When loading, it reads the PNG back and converts it into a UTexture2D
+                    for display in save/load UI slots.
+                </p>
+                <p>
+                    The capture side uses manual-only capture (no per-frame overhead) with a default 1920x1080 render target
+                    that auto-creates if not assigned. The async save pipeline reads pixels from the render target,
+                    compresses to PNG via IImageWrapper on a background thread, and writes to disk without blocking
+                    the game thread. It supports both save game thumbnails and map-level thumbnails with separate storage paths.
+                </p>
+                <p>
+                    The retrieval side loads PNGs asynchronously — file I/O and decompression happen on a background thread,
+                    then UTexture2D creation happens on the game thread using CreateTransient with BulkData pixel upload.
+                    Retrieved textures are stored by slot number for easy binding to save/load UI widgets.
+                    A synchronous variant is also available for loading any PNG path directly.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">C++</span>
+                    <span class="detail-tag">Scene Capture</span>
+                    <span class="detail-tag">Async I/O</span>
+                    <span class="detail-tag">IImageWrapper</span>
+                    <span class="detail-tag">Render Targets</span>
+                    <span class="detail-tag">Plugin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/save-thumbnail.png">
+                    <source src="videos/dev/save-thumbnail-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Blueprints</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/save-thumbnail/screenshot1.png" alt="Save Thumbnail Blueprint 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/save-thumbnail/screenshot2.png" alt="Save Thumbnail Blueprint 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/save-thumbnail/screenshot3.png" alt="Save Thumbnail Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

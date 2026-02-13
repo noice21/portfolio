@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Labyrinth</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#plugins">Plugins</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ericson Osaigbovo</h1>
+                <p class="hero-subtitle">Unreal Engine Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="resume.pdf" class="cta-button resume-button" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    My journey started around 2017 when I was in college, watching YouTube videos about game development.
+                    That's where I was first introduced to C++ and learned the basics. I followed along with tutorials,
+                    then eventually stopped watching and started building my own projects to learn Unreal Engine 4.
+                    Those early games were learning experiences, but they taught me the fundamentals that I still use today.
+                </p>
+                <p>
+                    I released my first game, <a href="https://sovereign34.itch.io/phoenix-princess" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Phoenix Blade</a>,
+                    as a beta on itch.io — and everything I learned from that project I carried into Project Lucian,
+                    where I now build complete gameplay systems in C++ and Blueprints, from combat and quest systems
+                    to standalone plugins available on Fab.
+                </p>
+                <div class="skills">
+                    <div class="skill-tag">Unreal Engine 5</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">Character Creator 4/5</div>
+                    <div class="skill-tag">Blender</div>
+                    <div class="skill-tag">Blueprints</div>
+                    <div class="skill-tag">Gameplay Systems</div>
+                    <div class="skill-tag">UI/UMG</div>
+                    <div class="skill-tag">AI &amp; Behavior Trees</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <!-- Featured Game Project -->
+            <div class="project-card" data-category="game">
+                <div class="project-badge">Featured Game</div>
+                <div class="project-media">
+                    <video id="main-video" class="game-video" controls poster="images/game-thumbnail.jpg">
+                        <source src="videos/explore_capital city.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Video Thumbnail Selector -->
+                    <div class="video-thumbnails">
+                        <div class="video-thumb active" data-video="videos/explore_capital city.mp4" data-title="Gameplay Clip 1">
+                            <div class="thumb-preview">
+                                <span class="thumb-play">&#9654;</span>
+                            </div>
+                            <span class="thumb-label">Clip 1</span>
+                        </div>
+                        <div class="video-thumb active" data-video="videos/explore_overworld.mp4" data-title="Gameplay Clip 2">
+                            <div class="thumb-preview">
+                                <span class="thumb-play">&#9654;</span>
+                            </div>
+                            <span class="thumb-label">Clip 2</span>
+                        </div>
+                         <div class="video-thumb active" data-video="videos/Tia_combat.mp4" data-title="Gameplay Clip 3">
+                            <div class="thumb-preview">
+                                <span class="thumb-play">&#9654;</span>
+                            </div>
+                            <span class="thumb-label">Clip 3</span>
+                        </div>
+                         <div class="video-thumb active" data-video="videos/Switching_characters_outside_battles.mp4" data-title="Gameplay Clip 4">
+                            <div class="thumb-preview">
+                                <span class="thumb-play">&#9654;</span>
+                            </div>
+                            <span class="thumb-label">Clip 4</span>
+                        </div>
+                        <div class="video-thumb active" data-video="videos/switching in battle.mp4" data-title="Gameplay Clip 5">
+                            <div class="thumb-preview">
+                                <span class="thumb-play">&#9654;</span>
+                            </div>
+                            <span class="thumb-label">Clip 5</span>
+                        </div>
+                        <!-- Add more videos by copying the div above and changing data-video and labels -->
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3 class="project-title">Project Lucian</h3>
+                    <p class="project-description">
+                        When the throne falls to treachery, two heirs must forge
+                         their own destiny.
+                        
+                         Project Lucian is a story-driven action JRPG following
+                          twin royals Tia and Ester Lucian as they flee their kingdom
+                           after their father King Melchior's assassination. Thrust into 
+                           exile, the siblings must survive in a world that has turned against
+                            them while uncovering the conspiracy that shattered their lives.
+                        
+                         Master a unique constellation-based magic 
+                        system where spells are channeled through 
+                        martial arts kata, drawing power from the
+                        Prana that flows from the stars themselves.
+                         Command Tia's devastating spellcasting prowess and 
+                         Ester's dynamic sword artes in strategic party-based 
+                         combat that rewards timing, positioning, and synergy.
+                        
+                        Build your party, forge unlikely alliances, and fight to reclaim what was stolen—or discover a new path entirely.
+                        
+                    </p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">Game</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Platform:</span>
+                            <span class="detail-value">  PC   </span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Status:</span>
+                            <span class="detail-value">In Development</span>
+                        </div>
+                    </div>
+
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Deep character-driven narrative</li>
+                            <li>Dynamic party-based combat with combo mechanics 
+                                and strategic depth</li>
+                            <li>Expansive world with main story quests and contextual
+                                 side content</li>
+                            <li>Stunning visual effects</li>
+                        </ul>
+                    </div>
+
+                    <div class="dev-showcase">
+                        <h4>Development Highlights</h4>
+                        <p class="dev-intro">Systems and tools I engineered for this project, some of which I've released as standalone plugins.</p>
+                        <div class="dev-grid">
+                            <a href="photo-mode.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/photo-mode.png" alt="Photo Mode Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Photo Mode System</h5>
+                                        <span class="dev-fab-badge">On Fab</span>
+                                    </div>
+                                    <p>Built a full photo mode with free camera, filters, depth of field control, and UI hiding. Originally developed for Project Lucian, now available as a standalone plugin.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Blueprints</span>
+                                         <span class="dev-tag">C++</span>
+                                        <span class="dev-tag">UMG</span>
+                                        <span class="dev-tag">Plugin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+
+                            <a href="minimap.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/minimap.png" alt="Mini Map System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Mini Map System</h5>
+                                        <span class="dev-fab-badge">On Fab</span>
+                                    </div>
+                                    <p>Designed a lightweight mini map that avoids expensive location calculations. Built for performance — no heavy scene captures or constant world-to-screen math.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Blueprints</span>
+                                        <span class="dev-tag">C++</span>
+                                        <span class="dev-tag">UMG</span>
+                                        <span class="dev-tag">Plugin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+
+                            <a href="combat-system.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/combat-system.png" alt="Combat System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Party Combat System</h5>
+                                    </div>
+                                    <p>Extended the Turn-Based jRPG Template from Fab, converting battles to real-time action combat, reworking exploration switching to use a party UI, and adding Behavior Tree-driven enemy AI.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Blueprints</span>
+                                        <span class="dev-tag">Behavior Trees</span>
+                                        <span class="dev-tag">AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+
+                            <a href="camera-system.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/camera-system.png" alt="Camera System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Dynamic Battle & Target Camera</h5>
+                                    </div>
+                                    <p>Built a dynamic camera system that smoothly transitions between exploration and combat, with lock-on targeting and contextual framing for party battles.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Targeting</span>
+                                        <span class="dev-tag">Blueprints</span>
+                                        <span class="dev-tag">Camera</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="quest-system.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/quest-system.png" alt="Quest System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Quest System</h5>
+                                        <span class="dev-wip-badge">In Development</span>
+                                    </div>
+                                    <p>Building a flexible quest system to handle main story progression and contextual side content, with tracking, objectives, and branching outcomes.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Blueprints</span>
+                                        <span class="dev-tag">C++</span>
+                                        <span class="dev-tag">Data-Driven</span>
+                                        <span class="dev-tag">Plugin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="dodge-system.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/dodge-system.png" alt="Dodge System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Smart Dodge System</h5>
+                                    </div>
+                                    <p>A directional dodge system that evaluates surroundings via capsule sweeps and scores directions by obstacle clearance and enemy avoidance to pick the best escape route.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">C++</span>
+                                        <span class="dev-tag">AI</span>
+                                        <span class="dev-tag">Movement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="save-thumbnail.html" class="dev-card-link">
+                            <div class="dev-card">
+                                <div class="dev-image">
+                                    <img src="images/dev/save-thumbnail.png" alt="Save Thumbnail System Blueprint">
+                                </div>
+                                <div class="dev-info">
+                                    <div class="dev-header">
+                                        <h5>Save Thumbnail System</h5>
+                                        <span class="dev-wip-badge">In Development</span>
+                                    </div>
+                                    <p>A save system that captures and displays screenshot thumbnails for each save slot, giving players a visual reference of where they left off.</p>
+                                    <div class="dev-tags">
+                                        <span class="dev-tag">Blueprints</span>
+                                        <span class="dev-tag">C++</span>
+                                        <span class="dev-tag">Plugin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-characters">
+                        <h4>Meet the Characters</h4>
+                        <div class="characters-grid">
+                            <div class="character-card">
+                                <div class="character-image">
+                                    <img src="images/character1.png" alt="Character 1">
+                                </div>
+                                <div class="character-info">
+                                    <h5>Tia Lucian</h5>
+                                    <p class="character-role">Playable character</p>
+                                    <p class="character-description">Tia Lucian is the elder of the royal twins, a compassionate yet determined mage who fuses martial arts with magic. After her father, the king, was murdered, she and her family went into hiding. Though kind-hearted and intelligent, Tia is driven by a powerful resolve—to grow her magic and one day bring justice to the masked killer who shattered her family..</p>
+                                </div>
+                            </div>
+
+                            <div class="character-card">
+                                <div class="character-image">
+                                    <img src="images/character2.png" alt="Character 2">
+                                </div>
+                                <div class="character-info">
+                                    <h5>Ester Lucian</h5>
+                                    <p class="character-role">Playable character</p>
+                                    <p class="character-description">Prince Ester Lucian is the younger of the royal twins and a brave, disciplined warrior. After the murder of his father, the king, Ester flees into hiding with his mother and sister, determined to protect them and restore justice. Serious and steadfast, he is driven by loyalty, a strong sense of duty, and an unshakable desire to safeguard his people and reclaim his kingdom.</p>
+                                </div>
+                            </div>
+
+                            <div class="character-card">
+                                <div class="character-image">
+                                    <img src="images/character3.png" alt="Character 3">
+                                </div>
+                                <div class="character-info">
+                                    <h5>Lyn</h5>
+                                    <p class="character-role">Mentor</p>
+                                    <p class="character-description">Professor Lyn is a wise and seasoned magic practitioner, renowned for her deep knowledge of the arcane. As the trusted mentor to Princess Tia and Prince Ester, she guides them in mastering magic and understanding its complex theories, shaping them into capable wielders of the mystical arts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery">
+                        <h4>Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item"><img src="images/Gallery/screenshot1.png" alt="Game Screenshot 1"
+                                 style="width: 100%; height: 100%; object-fit: cover;"></div>
+                            <div class="gallery-item"><img src="images/Gallery/screenshot2.png" alt="Game Screenshot 2" 
+                                style="width: 100%; height: 100%; object-fit: cover;"></div>
+                            <div class="gallery-item"><img src="images/Gallery/screenshot3.png" alt="Game Screenshot 3" 
+                                style="width: 100%; height: 100%; object-fit: cover;"></div>
+                            <div class="gallery-item"><img src="images/Gallery/screenshot4.png" alt="Game Screenshot 4"
+                                 style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Plugins Section -->
+    <section id="plugins" class="plugins">
+        <div class="container">
+            <h2 class="section-title">Unreal Engine Plugins</h2>
+            <p class="plugins-subtitle">View plugins and assets I've published for Unreal Engine</p>
+            <a href="https://www.fab.com/sellers/Labyrinth%20Games" class="fab-button" target="_blank" rel="noopener noreferrer">
+                Browse My Fab Store
+            </a>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="youtube-section">
+        <div class="container">
+            <h2 class="section-title">YouTube</h2>
+            <p class="youtube-subtitle">Development updates, plugin showcases, and devlogs</p>
+            <div class="youtube-playlists">
+                <a href="https://youtube.com/playlist?list=PLxPMeJIEhELrM2UmmebC9uJ9VZjLEJQlS" class="youtube-playlist-card" target="_blank" rel="noopener noreferrer">
+                    <span class="playlist-icon">&#9654;</span>
+                    <div class="playlist-info">
+                        <h4>Project Lucian</h4>
+                        <p>Development updates and gameplay showcases</p>
+                    </div>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLxPMeJIEhELqxc5z8J8kvF2QuIJi61gOS" class="youtube-playlist-card" target="_blank" rel="noopener noreferrer">
+                    <span class="playlist-icon">&#9654;</span>
+                    <div class="playlist-info">
+                        <h4>Plugin Showcases</h4>
+                        <p>Demos and walkthroughs of my Unreal Engine plugins</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in collaborating or want to learn more about my work?</p>
+                <div class="contact-links">
+                    <a href="mailto:sovereign.interactive7@gmail.com" class="contact-button">Email Me</a>
+                    <a href="https://github.com/noice21" class="contact-button" target="_blank">GitHub</a>
+                    <a href="https://sovereign34.itch.io/phoenix-princess" class="contact-button" target="_blank">itch.io</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

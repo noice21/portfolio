@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Map System - Labyrinth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Labyrinth</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#plugins">Plugins</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero">
+        <h1>Mini Map System</h1>
+        <a href="https://www.fab.com/sellers/Labyrinth%20Games" class="detail-badge fab" target="_blank" rel="noopener noreferrer">Available on Fab</a>
+    </section>
+
+    <!-- Overview -->
+    <section class="detail-section">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+            <h2>Overview</h2>
+            <div class="detail-overview">
+                <p>
+                    A complete minimap system built in C++ with fog of war, dynamic icons, and real-time exploration tracking.
+                    Instead of relying on expensive per-frame scene captures, it uses a single orthographic capture at setup
+                    combined with Material Parameter Collection (MPC) driven rendering for real-time player tracking and zoom.
+                </p>
+                <p>
+                    The system features a full fog of war implementation using a CPU-side explored grid that uploads to a GPU texture,
+                    with three-tier blending in a custom HLSL node (current view, explored, unexplored). Icons are pooled for performance
+                    with a configurable max limit, and each icon supports per-icon fog visibility, pulse/fade animations, rotation tracking,
+                    and click interaction. The entire fog state is serializable for save/load.
+                </p>
+                <p>
+                    Architecture includes a Capture Actor for level bounds and map image export, a Display Widget handling all rendering
+                    and icon management, a Fog of War Manager owning the exploration state, and Icon Components that attach to any actor.
+                    Built for Project Lucian and now available as a standalone plugin on Fab.
+                </p>
+                <div class="detail-tags">
+                    <span class="detail-tag">C++</span>
+                    <span class="detail-tag">Blueprints</span>
+                    <span class="detail-tag">UMG</span>
+                    <span class="detail-tag">HLSL</span>
+                    <span class="detail-tag">Fog of War</span>
+                    <span class="detail-tag">MPC</span>
+                    <span class="detail-tag">Plugin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Video Demo</h2>
+            <div class="detail-video">
+                <video controls poster="images/dev/minimap.png">
+                    <source src="videos/dev/minimap-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <h2>Screenshots &amp; Blueprints</h2>
+            <div class="detail-screenshots">
+                <div class="detail-screenshot">
+                    <img src="images/dev/minimap/screenshot1.png" alt="Mini Map Blueprint 1">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/minimap/screenshot2.png" alt="Mini Map Blueprint 2">
+                </div>
+                <div class="detail-screenshot">
+                    <img src="images/dev/minimap/screenshot3.png" alt="Mini Map Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Labyrinth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
